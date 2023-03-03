@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
+import SideSection from "../SideSection/SideSection";
 import "./GymCart.css";
 
 const GymCart = () => {
@@ -29,8 +30,8 @@ const GymCart = () => {
           ))}
         </div>
       </div>
-      <div>
-        <h2>Order Summary</h2>
+      <div className="side-section">
+        <SideSection></SideSection>
       </div>
     </div>
   );

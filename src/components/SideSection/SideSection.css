@@ -1,0 +1,20 @@
+.honer-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.honer-div img {
+  width: 70px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+.honer-div p {
+  line-height: 1px;
+  color: lightblue;
+  font-weight: 700;
+}
+
+.weight-height-age-div {
+  background-color: #bcdffd;
+  height: 100px;
+}
