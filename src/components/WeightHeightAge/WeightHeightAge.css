@@ -1,0 +1,28 @@
+.weight-height-age-div {
+  background-color: #bcdffd;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  align-items: center;
+  margin: 10px;
+
+  line-height: 7px;
+  border-radius: 20px;
+}
+.weight-height-age-div p {
+  color: rgb(105, 145, 158);
+}
+.number {
+  font-size: 20px;
+}
+.number-text {
+  color: rgb(88, 144, 163);
+}
+
+@media screen and (max-width: 1100px) {
+  .weight-height-age-div {
+    grid-template-columns: repeat(2, 1fr);
+    height: 200px;
+  }
+}

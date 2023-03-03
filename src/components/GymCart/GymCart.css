@@ -36,6 +36,13 @@
   background-color: aliceblue;
   padding: 10px;
 }
+/* parent main div */
+@media screen and (max-width: 1100px) {
+  .gymCart-parent-div {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+/*  */
 @media screen and (max-width: 1100px) {
   .carts-map-div {
     grid-template-columns: repeat(2, 1fr);
