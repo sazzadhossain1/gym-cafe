@@ -1,0 +1,10 @@
+.cart-info {
+  background-color: aliceblue;
+  width: 350px;
+  padding: 20px;
+}
+.cart-info img {
+  width: 350px;
+  height: 200px;
+  border-radius: 30px;
+}
