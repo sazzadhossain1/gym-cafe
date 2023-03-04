@@ -1,0 +1,19 @@
+.exercise-details-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  background-color: #bcdffd;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.exercise-details-div h2 {
+  margin-left: 20px;
+  font-size: 21px;
+}
+.exercise-details-div p {
+  color: #7aa1c4;
+  font-weight: 700;
+  margin-left: 30px;
+  font-size: 18px;
+}

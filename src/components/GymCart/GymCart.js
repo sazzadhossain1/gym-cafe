@@ -5,11 +5,19 @@ import "./GymCart.css";
 
 const GymCart = () => {
   const [carts, setCarts] = useState([]);
+  const [cat, setCart] = useState([]);
+  // console.log(cat);
   useEffect(() => {
     fetch("product.json")
       .then((res) => res.json())
       .then((data) => setCarts(data));
   }, []);
+
+  const handleAddToList = (fullCart) => {
+    const newCat = [...cat, fullCart];
+    setCart(newCat);
+    // console.log(newTime);
+  };
   return (
     <div className="gymCart-parent-div">
       <div>
@@ -26,12 +34,16 @@ const GymCart = () => {
         </div>
         <div className="carts-map-div">
           {carts.map((cart) => (
-            <Cart key={cart.id} cart={cart}></Cart>
+            <Cart
+              key={cart.id}
+              cart={cart}
+              handleAddToList={handleAddToList}
+            ></Cart>
           ))}
         </div>
       </div>
       <div className="side-section">
-        <SideSection></SideSection>
+        <SideSection cat={cat}></SideSection>
       </div>
     </div>
   );

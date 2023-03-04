@@ -2,7 +2,9 @@ import React from "react";
 import "./SideSection.css";
 import logo from "../../images/sazzad.jpg";
 import WeightHeightAge from "../WeightHeightAge/WeightHeightAge";
-const SideSection = () => {
+import ExerciseDetails from "../ExerciseDetails/ExerciseDetails";
+const SideSection = (props) => {
+  //   console.log(props.cat);
   return (
     <div>
       <div className="honer-div">
@@ -16,6 +18,7 @@ const SideSection = () => {
       </div>
       {/*  */}
       <WeightHeightAge></WeightHeightAge>
+      <ExerciseDetails sendTime={props.cat}></ExerciseDetails>
     </div>
   );
 };
